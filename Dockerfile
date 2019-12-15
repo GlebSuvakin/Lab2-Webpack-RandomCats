@@ -4,6 +4,7 @@ WORKDIR /Lab2-Webpack-RandomCats
 COPY package*.json ./
 RUN npm install
 COPY . ./
+RUN npm run build
 
 FROM nginx:1.17.6-alpine
 COPY --from=build /Lab2-Webpack-RandomCats/dist /usr/share/nginx/html
