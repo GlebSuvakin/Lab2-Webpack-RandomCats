@@ -4,16 +4,21 @@
   "description": "",
   "main": "webpack.common.js",
   "dependencies": {
+    "chromedriver": "^79.0.0",
+    "cypress": "^3.8.0",
     "html-webpack-plugin": "^3.2.0"
   },
   "devDependencies": {
+    "@applitools/eyes-selenium": "^4.33.1",
     "css-loader": "^3.3.2",
+    "mocha": "^6.2.2",
+    "selenium-webdriver": "^4.0.0-alpha.5",
     "style-loader": "^1.0.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --recursive --timeout 10000 ./src/test.js",
     "build": "webpack"
   },
   "author": "",
