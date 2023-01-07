@@ -6,7 +6,7 @@
   "dependencies": {
     "chromedriver": "^79.0.0",
     "cypress": "^3.8.0",
-    "html-webpack-plugin": "^3.2.0"
+    "html-webpack-plugin": "^5.5.0"
   },
   "devDependencies": {
     "@applitools/eyes-selenium": "^4.33.1",
